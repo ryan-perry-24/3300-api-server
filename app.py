@@ -15,7 +15,7 @@ def home():
     return (
         "<h1>Salary Prediction API</h1>"
         "<p>BAIS:3300 - Digital Product Development</p>"
-        "<p>Mike Colbert</p>"
+        "<p>Ryan Perry</p>"
     )
 
 
@@ -40,6 +40,7 @@ def predict():
             "title",
             "company_size",
         ]
+        
         if not all(field in data for field in required_fields):
             return jsonify({"error": "Missing one or more required fields"}), 400
 
